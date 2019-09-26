@@ -1,0 +1,37 @@
+﻿@model Models.ViewModels.Auth.UserLoginViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+<div class="col-md-12">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6" style="margin-top:15vh">
+        <div class="panel panel-default">
+            <div class="panel-heading">Login</div>
+            <div class="panel-body">
+
+                @using (Html.BeginForm("Index", "Auth"))
+                {
+                    <div class="form-group">
+                        <label for="UserName">UserName:</label>
+                        @Html.TextBoxFor(m => m.UserName,new {@class="form-control"})
+
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password:</label>
+                        @Html.PasswordFor(m => m.Password,new { @class = "form-control"})
+                    </div>
+                    <input type="submit" class="btn btn-success" value="Log In" />
+                }
+            </div>
+        </div>
+
+    </div>
+
+</div>
+

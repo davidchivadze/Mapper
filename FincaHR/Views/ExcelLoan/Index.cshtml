@@ -1,0 +1,36 @@
+﻿@model Models.ViewModels.ExcelLoan.FolderFileListViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>File List</h2>
+
+<h4>FileListModel</h4>
+<hr />
+<div class="row">
+<div class="col-md-12">
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>File Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in Model.FileListModels)
+            {
+                <tr>
+                    <td>@file.FileName</td>
+                    <td>@file.FileTypeName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+</div>
+
+<div>
+</div>
+

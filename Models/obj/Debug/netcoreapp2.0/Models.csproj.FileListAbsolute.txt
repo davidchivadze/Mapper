@@ -1,0 +1,12 @@
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\bin\Debug\netcoreapp2.0\Models.deps.json
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\bin\Debug\netcoreapp2.0\Models.dll
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\bin\Debug\netcoreapp2.0\Models.pdb
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\obj\Debug\netcoreapp2.0\Models.csprojAssemblyReference.cache
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\obj\Debug\netcoreapp2.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\obj\Debug\netcoreapp2.0\Models.AssemblyInfoInputs.cache
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\obj\Debug\netcoreapp2.0\Models.AssemblyInfo.cs
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\obj\Debug\netcoreapp2.0\Models.csproj.CopyComplete
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\obj\Debug\netcoreapp2.0\Models.dll
+C:\Users\daviti.chivadze\source\repos\FincaHR\Models\obj\Debug\netcoreapp2.0\Models.pdb

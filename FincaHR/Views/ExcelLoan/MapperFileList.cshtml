@@ -1,0 +1,47 @@
+﻿@model FincaHR.Models.ExcelLoan.UploadFIleListViewModel
+
+@{
+    ViewData["Title"] = "FileList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mapper Files</h2>
+
+<h4>UploadFIleListViewModel</h4>
+<hr />
+<div class="row col-md-12">
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>File ID</th>
+                <th>File Name</th>
+                <th>Upload Date</th>
+                <th>Upload File Type</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in Model.FileList)
+            {
+
+                <tr>
+                    <td>@file.ID</td>
+                    <td>@file.FileName</td>
+                    <td>@file.UploadDate</td>
+                    <td>@file.UploadFileTypeName</td>
+                    @if (file.IsImported)
+                    {
+                    <td><button class="btn btn-success" disabled>Import Mapping Data</button></td>
+                    }
+                    else
+                    {
+                        <td><a href="/ExcelLoan/ImportMaping/@file.ID"><button class="btn btn-success">Import Mapping Data</button></a></td>
+                    }
+                </tr>
+
+            }
+        </tbody>
+
+    </table>
+</div>
+

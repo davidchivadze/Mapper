@@ -1,0 +1,90 @@
+﻿body {
+    padding-top: 50px;
+    /*padding-bottom: 20px;*/
+    padding-left:0px;
+    margin-left:0px;
+}
+
+.navbar {
+    background-color: rgb(181,9,57) !important;
+    border-color: rgb(181,9,57) !important;
+    color: #ffffff;
+}
+.contentRow{
+    margin-left:0px;
+    padding-left:0px;
+}
+.navbar-inverse .navbar-nav li a {
+    color: white;
+}
+.navbarLeft {
+    background: #000000 !important;
+    margin-left:0px;
+    /*padding-left:0px;*/
+    height: 100vh;
+    padding:0px;
+}
+    .navbarLeft a {
+        text-decoration: none;
+        color: rgb(181,9,57);
+        font-weight:bold;
+        font-size: 16px;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+    .navbarLeft .col-md-12{
+        padding:12px 0px 12px 0px;
+    }
+    .topNavbarContainer {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+#emlployeeList {
+    width: 100%;
+}
+#emlployeeList thead {
+    border-top: 1px solid;
+    background: rgb(226,226,224);
+    height:30px;
+}
+#emlployeeList thead th:hover {
+    background: rgb(214,214,211);
+}
+    #emlployeeList tbody tr td{
+       vertical-align:middle;
+    }
+    /* Wrapping element */
+    /* Set some basic padding to keep content from hitting the edges */
+    .body-content {
+        padding-left: 0px;
+        padding-right: 15px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+.noPadding{
+    padding:0px !important;
+}
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

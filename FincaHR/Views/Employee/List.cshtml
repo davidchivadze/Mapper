@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewData["Title"] = "Employee List";
+}
+
+<environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="~/js/Employee.js"></script>
+</environment>
+<link href="~/css/Employee.css" rel="stylesheet" />
+<h3>Employee List</h3>
+<div class="col-md-12">
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <button class="btn btn-default" style="border-radius:0px; background:rgb(181,9,57);color:white;" data-toggle="modal" data-target="#EmployeeCreateModal">CREATE</button>
+            <button class="btn btn-default" style="background:none;border:none;color:blue;">IMPORT</button>
+        </div>
+        <div class="col-md-8" style="text-align:right">
+            <input type="text" class="form-control" placeholder="Search..." style=" margin-right:10%" />
+        </div>
+    </div>
+    <hr />
+    <div class="row col-md-12 noPadding">
+
+        <table class="table table-hover" width="100%" id="emlployeeList">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="CheckAllEmployee" /></th>
+                    <th>Photo</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Hire Date</th>
+                    <th>Duty Station</th>
+                    <th>Possition</th>
+                    <th>Organization Entity</th>
+                    <th>Reports To</th>
+                    <th>IP Phone</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Termination Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" class="employeeCheck" value="1" /></td>
+                    <td><img src="~/images/imageUser.jfif" width="100px" height="100px" /></td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="employeeCheck" value="1" /></td>
+                    <td><img src="~/images/imageUser.jfif" width="100px" height="100px" /></td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="employeeCheck" value="1" /></td>
+                    <td><img src="~/images/imageUser.jfif" width="100px" height="100px" /></td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+@Html.Partial("EmployeeCreateModal.cshtml")
